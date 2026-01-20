@@ -45,7 +45,7 @@
     >
       <div class="relative w-full max-w-lg">
         <img
-          class="w-full h-full object-cover scale-40 lg:scale-90 "
+          class="w-full h-full object-cover scale-40 lg:scale-90"
           src="./assets/hero-circle.png"
           alt=""
         />
@@ -91,13 +91,13 @@
         class="flex flex-col gap-6 items-center text-center max-w-3xl mx-auto py-6 px-4 text-white"
       >
         <span class="text-4xl font-bold">About the Podcast</span>
-        <p class="text-lg">
+        <p class="text-lg font-thin">
           TechWave is your go-to podcast for staying ahead in the fast-paced
           world of technology. We break down complex topics into digestible
           insights, explore productivity strategies that actually work, and
           share stories of personal growth from industry leaders.
         </p>
-        <p>
+        <p class="font-thin">
           Join thousands of young professionals and tech enthusiasts who start
           their day with TechWave.
         </p>
@@ -134,7 +134,7 @@
     >
       <span class="text-5xl text-white font-bold">Why Choose TechWave</span>
       <div
-        class="max-w-7xl h-auto mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[250px]"
+        class="max-w-7xl h-auto mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[250px] font-thin"
       >
         <div
           class="row-span-1 lg:row-span-2 bg-[#2a1043] rounded-4xl p-8 flex flex-col gap-3 justify-center text-white shadow-lg"
@@ -195,12 +195,12 @@
       </div>
     </section>
 
-    <section class="bg-[#1A0B2E] py-26">
+    <section class="bg-[#1A0B2E] py-26 px-8">
       <span class="block text-5xl text-white font-bold mx-auto text-center mb-8"
         >Featured Episodes</span
       >
       <div
-        class="max-w-7xl h-auto flex flex-col lg:flex-row mx-auto justify-center gap-8 px-4 mb-26"
+        class="max-w-7xl h-auto flex flex-col lg:flex-row mx-auto justify-center gap-8 mb-26"
       >
         <div class="w-sm h-auto bg-[#250D44] rounded-xl">
           <div>
@@ -214,7 +214,7 @@
             <span class="text-2xl text-white font-bold"
               >The Future of AI in Everyday Life</span
             >
-            <p class="text-white">
+            <p class="text-white font-thin">
               Exploring how artificial intelligence is transforming our daily
               routines and what to expect in the next decade.
             </p>
@@ -236,12 +236,12 @@
             <span class="text-2xl text-white font-bold"
               >Building Better Habits for Remote Work</span
             >
-            <p class="text-white">
+            <p class="text-white font-thin">
               Practical strategies for staying productive and maintaining
               work-life balance in a remote environment.
             </p>
             <div class="text-green-400 flex gap-2 items-center mb-4">
-              <img class="h-4" src="./assets/clock.png" alt="" />42 min
+              <img class="h-4" src="./assets/clock.png" alt="" />35 min
             </div>
           </div>
         </div>
@@ -258,18 +258,19 @@
             <span class="text-2xl text-white font-bold"
               >Career Growth in Tech: A Roadmap</span
             >
-            <p class="text-white">
+            <p class="text-white font-thin">
               Expert advice on navigating your tech career from junior developer
               to senior leadership roles.
             </p>
             <div class="text-green-400 flex gap-2 items-center mb-4">
-              <img class="h-4" src="./assets/clock.png" alt="" />42 min
+              <img class="h-4" src="./assets/clock.png" alt="" />51 min
             </div>
           </div>
         </div>
       </div>
 
-      <span class="block text-5xl text-white font-bold mx-auto text-center mb-8 px-6 lg:px-0"
+      <span
+        class="block text-5xl text-white font-bold mx-auto text-center mb-8 px-6 lg:px-0"
         >Meet The Host</span
       >
       <div
@@ -281,15 +282,19 @@
         <div
           class="w-full md:w-3/4 flex flex-col gap-4 justify-center px-6 pb-6"
         >
-          <span class="text-3xl text-white font-bold">Alex Kumar</span>
-          <p class="text-white">
-            Tech entrepreneur, productivity expert, and lifelong learner. Alex
-            has been in the tech industry for over 10 years, working with
-            startups and Fortune 500 companies. Through TechWave, Alex shares
-            insights from industry leaders and practical advice for anyone
-            looking to grow in tech.
-          </p>
-          <div class="flex items-center gap-2">
+          <div class="flex items-center justify-center lg:justify-start">
+            <span class="text-3xl text-white font-bold">Alex Kumar</span>
+          </div>
+          <div class="flex items-center justify-center lg:justify-start">
+            <p class="text-white text-center lg:text-left font-thin">
+              Tech entrepreneur, productivity expert, and lifelong learner. Alex
+              has been in the tech industry for over 10 years, working with
+              startups and Fortune 500 companies. Through TechWave, Alex shares
+              insights from industry leaders and practical advice for anyone
+              looking to grow in tech.
+            </p>
+          </div>
+          <div class="flex items-center justify-center lg:justify-start gap-2">
             <div class="border border-[#533C72] px-2 py-2 rounded-full">
               <img src="./assets/linkedin.png" alt="" />
             </div>
@@ -318,35 +323,34 @@
           >
         </p>
       </div>
-      <div class="text-white flex flex-wrap pl-15 gap-3 lg:gap-8">
-        <div class="flex gap-3 justify-center">
-          <div>
-            <img class="" src="./assets/spotify.png" alt="" />
-          </div>
-          <div>Spotify</div>
+      <div
+        class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-white text-sm px-16"
+      >
+        <div class="flex items-center gap-2">
+          <img src="./assets/spotify.png" class="w-4 h-4" />
+          <span>Spotify</span>
         </div>
-        <div class="flex gap-3">
-          <div>
-            <img class="" src="./assets/apple-podcast.png" alt="" />
-          </div>
-          <div>Apple Podcast</div>
+
+        <div class="flex items-center gap-2">
+          <img src="./assets/apple-podcast.png" class="w-4 h-4" />
+          <span>Apple Podcasts</span>
         </div>
-        <div class="flex gap-3">
-          <div>
-            <img class="" src="./assets/youtube-podcast.png" alt="" />
-          </div>
-          <div>Youtube</div>
-          <div></div>
+
+        <div class="flex items-center gap-2">
+          <img src="./assets/youtube-podcast.png" class="w-4 h-4" />
+          <span>YouTube</span>
         </div>
-        <div class="flex gap-3">
-          <div>
-            <img class="" src="./assets/twitter.png" alt="" />
-          </div>
-          <div>Twitter</div>
+
+        <div class="flex items-center gap-2">
+          <img src="./assets/twitter.png" class="w-4 h-4" />
+          <span>Twitter</span>
         </div>
       </div>
-      <div>
-        <p class="text-white">© 2026 TechWave Podcast. All rights reserved.</p>
+
+      <div class="mb-5 lg:mb-0">
+        <p class="text-white font-thin">
+          © 2026 TechWave Podcast. All rights reserved.
+        </p>
       </div>
     </section>
   </body>
