@@ -16,47 +16,46 @@
   <body>
     <header class="bg-[#1A0B2E]">
       <nav class="flex items-center justify-between p-6 max-w-7xl mx-auto">
-        <div>
-          <p class="font-inter text-white text-4xl font-bold">
-            Tech<span
-              class="bg-[linear-gradient(180deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] bg-clip-text text-transparent"
-              >Wave</span
-            >
-          </p>
-        </div>
-        <div class="flex">
-          <ul class="flex gap-8 mr-8 text-white text-lg">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Episods</a></li>
-            <li><a href="#">Host</a></li>
-          </ul>
-        </div>
-        <div>
-          <button
-            type="submit"
-            class="text-white bg-[linear-gradient(180deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] flex gap-1 py-2 px-4 rounded-4xl font-semibold"
+        <p class="font-inter text-white text-3xl sm:text-4xl font-bold">
+          Tech<span
+            class="bg-[linear-gradient(180deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] bg-clip-text text-transparent"
+            >Wave</span
           >
-            Subscribe <img src="./assets/ArrowRight.png" alt="" />
-          </button>
-        </div>
+        </p>
+        <ul class="hidden md:flex gap-8 text-white text-lg items-center">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Episodes</a></li>
+          <li><a href="#">Host</a></li>
+          <li>
+            <button
+              class="text-white bg-[linear-gradient(180deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] flex gap-1 py-2 px-4 rounded-full font-semibold"
+            >
+              Subscribe
+              <img src="./assets/ArrowRight.png" alt="" />
+            </button>
+          </li>
+        </ul>
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+          ☰
+        </button>
       </nav>
     </header>
     <section
-      class="relative h-screen bg-[url('./assets/hero-bg.png')] bg-cover bg-center flex flex-col items-center justify-center px-4"
+      class="relative w-full bg-[url('/assets/hero-mobile.png')] sm:bg-[url('/assets/hero-bg.png')] bg-cover bg-center flex flex-col items-center justify-start px-4 pt-10 pb-20 min-h-screen"
     >
       <div class="relative w-full max-w-lg">
         <img
-          class="w-full h-full object-cover scale-90 -translate-y-10"
+          class="w-full h-full object-cover scale-40 lg:scale-90 "
           src="./assets/hero-circle.png"
           alt=""
         />
         <img
-          class="absolute inset-0 m-auto h-48 scale-100 -translate-y-10"
+          class="absolute inset-0 m-auto scale-50 lg:scale-100 -translate-y-2 translate-x-1"
           src="./assets/microphone.png"
           alt=""
         />
         <span
-          class="absolute top-10 right-15 bg-[#00FF88] text-black text-xs font-bold px-6 py-2 rounded-full"
+          class="absolute top-40 right-25 sm:right-10 bg-[#00FF88] text-black text-xs font-bold px-6 py-2 rounded-full"
         >
           NEW
         </span>
@@ -72,17 +71,17 @@
 
       <div class="flex gap-4 mt-6">
         <button
-          class="flex gap-3 text-white bg-[linear-gradient(180deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] py-2 px-4 rounded-full font-semibold"
+          class="flex gap-1 text-white bg-[linear-gradient(180deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] py-2 px-4 rounded-full font-semibold"
           type="submit"
         >
-          <img class="scale-80" src="./assets/spotify.png" alt="" /> Listen On
+          <img class="w-6 h-6" src="./assets/spotify.png" alt="" /> Listen On
           Spotify
         </button>
         <button
           class="flex gap-3 text-white py-2 px-6 rounded-full font-semibold border border-green-500"
           type="submit"
         >
-          <img class="scale-80" src="./assets/message.png" alt="" /> Subscribe
+          <img class="w-6 h-6" src="./assets/message.png" alt="" /> Subscribe
         </button>
       </div>
     </section>
@@ -201,7 +200,7 @@
         >Featured Episodes</span
       >
       <div
-        class="max-w-7xl h-auto flex flex-col lg:flex mx-auto justify-center gap-8 px-4 mb-26"
+        class="max-w-7xl h-auto flex flex-col lg:flex-row mx-auto justify-center gap-8 px-4 mb-26"
       >
         <div class="w-sm h-auto bg-[#250D44] rounded-xl">
           <div>
@@ -270,14 +269,18 @@
         </div>
       </div>
 
-      <span class="block text-5xl text-white font-bold mx-auto text-center mb-8"
+      <span class="block text-5xl text-white font-bold mx-auto text-center mb-8 px-6 lg:px-0"
         >Meet The Host</span
       >
-      <div class="max-w-7xl mx-auto bg-[#250D44] flex rounded-4xl">
-        <div class="w-1/4 pl-20 py-6">
-          <img src="./assets/host.png" alt="" />
+      <div
+        class="max-w-7xl mx-auto bg-[#250D44] flex flex-col md:flex-row rounded-4xl overflow-hidden"
+      >
+        <div class="w-full md:w-1/4 flex justify-center py-6">
+          <img class="max-w-[200px]" src="./assets/host.png" alt="" />
         </div>
-        <div class="w-3/4 flex flex-col gap-4 justify-center">
+        <div
+          class="w-full md:w-3/4 flex flex-col gap-4 justify-center px-6 pb-6"
+        >
           <span class="text-3xl text-white font-bold">Alex Kumar</span>
           <p class="text-white">
             Tech entrepreneur, productivity expert, and lifelong learner. Alex
@@ -308,14 +311,14 @@
       class="relative sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-[url('/assets/footer-bg.png')] bg-cover bg-center flex flex-col justify-center items-center gap-6"
     >
       <div>
-        <p class="text-6xl text-white font-bold">
+        <p class="text-4xl lg:text-6xl text-white font-bold">
           Tech<span
             class="bg-[linear-gradient(180deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] bg-clip-text text-transparent"
             >Wave</span
           >
         </p>
       </div>
-      <div class="text-white flex gap-8">
+      <div class="text-white flex flex-wrap pl-15 gap-3 lg:gap-8">
         <div class="flex gap-3 justify-center">
           <div>
             <img class="" src="./assets/spotify.png" alt="" />
